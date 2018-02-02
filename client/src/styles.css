@@ -1,0 +1,49 @@
+body{
+	font-family: "Arial";
+}
+#delete{
+	background-color: #cccccc;
+}
+#table{
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	margin: 10px 0px 0px 30px;
+}
+#thead{
+	background-color: #cccccc;
+	color: black;
+}
+.post-list{
+	font-size: 10px;
+	font-family: Arial;
+	color: blue;
+	width: 450px;
+}
+td{
+	margin: 20px;
+	padding-left: 20px;
+}
+#greeting{
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 30px;
+}
+#logout-button{
+	vertical-align: top;
+	display: inline-block;
+	float: right;
+}
+#new-question{
+	margin-left: 40px;
+}
+#padded{
+	float: right;
+	margin-right: 300px;
+}
+#new_app_route{
+	background-color: #2b78e4;
+	color: white;
+	float: right;
+	margin-top: 10px;
+}

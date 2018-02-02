@@ -1,0 +1,55 @@
+
+<h2>New Appointment</h2>
+<div id = "new-question">
+
+<form (submit)="onSubmit(); 
+	createPost()" 
+	#createPost="ngForm">
+	<p>
+		Date: <input 
+		type="date" 
+		name="date"
+		required
+		[(ngModel)]="post.date"
+		#date="ngModel" > 
+
+		Time: <input 
+		type="time" 
+		name="time"
+		required
+		min="8:00"
+		max="17:00"
+		[(ngModel)]="post.time"
+		#time="ngModel" >
+	</p>
+
+	<p>
+		Complain: <textarea
+		name="description"
+		required
+		minlength="10"
+		maxlength="300"
+		placeholder="Description"
+		[(ngModel)]="post.description"
+		#description="ngModel" 
+		>
+		</textarea>
+	</p>
+	<button id = "home"
+	(click)="goHome()"
+	>Cancel
+	</button>
+	<button type="submit">
+		Add Appointment	
+	</button>
+
+
+<!-- <small [hidden]= "title.valid || (title.untouched)">Minimum characters for title is 5.</small> -->
+
+<br>
+
+<small [hidden]= "description.valid || (description.untouched)">Minimum characters for description is 10.</small>
+
+	
+</form>
+</div>
